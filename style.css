@@ -1,0 +1,77 @@
+/*
+ Theme Name: Confit Child Theme
+ Theme URI:
+ Description: Confit Child theme
+ Author:
+ Author URI:
+ Template: confit
+ Version: 1.0.0
+ License:  GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:
+ Text Domain: confit-child
+*/
+
+.dropdown-toggle {
+	display: none;
+}
+
+.main-small-navigation .children,
+.main-small-navigation .sub-menu {
+	display: none;
+}
+
+.main-small-navigation .children.toggled-on,
+.main-small-navigation .sub-menu.toggled-on {
+	display: block;
+}
+
+.main-small-navigation li {
+	border-bottom: 1px solid #ccc;
+	position: relative;
+}
+
+.main-small-navigation li li:last-of-type {
+	border: 0;
+}
+
+.main-small-navigation .dropdown-toggle {
+	background: transparent;
+	box-shadow: none;
+	display: block;
+	right: 0;
+	padding: 0 10px;
+	position: absolute;
+	top: 14px;
+}
+
+.main-small-navigation .dropdown-toggle:focus {
+	outline: none;
+}
+
+.main-small-navigation .dropdown-toggle:before {
+	content: "\f502";
+	vertical-align: top;
+	text-align: center;
+	-moz-transition: color .1s ease-in 0;
+	-webkit-transition: color .1s ease-in 0;
+	display: inline-block;
+	font-family: "Genericons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-decoration: inherit;
+	text-transform: none;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	speak: none;
+}
+
+.main-small-navigation .dropdown-toggle.toggled-on {
+	top: 5px;
+}
+
+.main-small-navigation .dropdown-toggle.toggled-on:before {
+	content: "\f500";
+}
